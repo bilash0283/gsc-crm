@@ -79,10 +79,10 @@ onBeforeUnmount(() => {
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
                                 <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">USA</Link></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">UK</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">CANADA</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">AUSTRALIA</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">EUROPE</a></li>
+                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">UK</Link></li>
+                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">CANADA</Link></li>
+                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">AUSTRALIA</Link></li>
+                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">EUROPE</Link></li>
                             </ul>
                         </li>
                         <li><a href="#team" class="fw-semibold text-uppercase">ABOUT US</a></li>
@@ -94,7 +94,6 @@ onBeforeUnmount(() => {
                                 <li><a href="#" class="fw-semibold text-uppercase">Study Abroad FAQ</a></li>
                                 <li><a href="#" class="fw-semibold text-uppercase">SOP IELTS GRE</a></li>
                                 <li><a href="#" class="fw-semibold text-uppercase">Agents Training</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">Events/Fairs</a></li>
                             </ul>
                         </li>
                         <li><Link href="/event" class="fw-semibold text-uppercase" :class="url=== '/event' && 'active'">EVENT</Link></li>
@@ -143,7 +142,7 @@ onBeforeUnmount(() => {
                         <div class="col-lg-6">
                             <form action="" method="" class="php-email-form">
                                 <button class=" border-none fw-semibold reg_btn "><a href="https://gsc.co.com/apply-agent/portal/index.php">LOGIN</a></button>
-                                <button class=" border-none text-white fw-semibold reg_btn_hover p-2 m-3">REGISTATION
+                                <button class=" border-none text-white fw-semibold reg_btn_hover p-2 m-3"><a href="https://gsc.co.com/apply-agent/portal/index.php" class="text-white">REGISTATION</a>
                                 </button>
                             </form>
                         </div>
@@ -169,21 +168,21 @@ onBeforeUnmount(() => {
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Countries</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" class="text-uppercase">UK</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" class="text-uppercase">USA</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" class="text-uppercase">Europe</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" class="text-uppercase">CANADA</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" class="text-uppercase">Australia</a></li>
+                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">USA</Link></li>
+                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">UK</Link></li>
+                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">CANADA</Link></li>
+                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">Australia</Link></li>
+                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">Europe</Link></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Students</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Institutes</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Agents</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Service Providers</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <Link href="/student" class="text-uppercase" :class="url=== '/student' && 'active'">STUDENTS</Link></li>
+                            <li><i class="bi bi-chevron-right"></i> <Link href="/institute" class="text-uppercase" :class="url=== '/institute' && 'active'">Institutes</Link></li>
+                            <li><i class="bi bi-chevron-right"></i> <Link href="/agent" class="text-uppercase" :class="url=== '/agent' && 'active'">Agents</Link></li>
+                            <li><i class="bi bi-chevron-right"></i> <Link href="/service-providers" class="text-uppercase" :class="url=== '/service-providers' && 'active'">Service Providers</Link></li>
                         </ul>
                     </div>
 
