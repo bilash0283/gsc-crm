@@ -16,6 +16,8 @@ Route::get('/sign-up',[HomeController::class,'signUp'])->name('sign-up');
 Route::get('/student',[HomeController::class,'student'])->name('student');
 Route::get('/service-providers',[HomeController::class,'serviceproviders'])->name('serviceproviders');
 Route::get('/institute',[HomeController::class,'institute'])->name('institute');
+Route::get('/usa',[HomeController::class,'usa'])->name('usa');
+Route::get('/event',[HomeController::class,'event'])->name('event');
 
 
 

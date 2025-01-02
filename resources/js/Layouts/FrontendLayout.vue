@@ -78,8 +78,8 @@ onBeforeUnmount(() => {
                             <i
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
+                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">USA</Link></li>
                                 <li><a href="#" class="fw-semibold text-uppercase">UK</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">USA</a></li>
                                 <li><a href="#" class="fw-semibold text-uppercase">CANADA</a></li>
                                 <li><a href="#" class="fw-semibold text-uppercase">AUSTRALIA</a></li>
                                 <li><a href="#" class="fw-semibold text-uppercase">EUROPE</a></li>
@@ -97,9 +97,10 @@ onBeforeUnmount(() => {
                                 <li><a href="#" class="fw-semibold text-uppercase">Events/Fairs</a></li>
                             </ul>
                         </li>
-                        <li><a href="#singup" class="fw-semibold text-uppercase">EVENT</a></li>
-                        <li><Link href="/sign-up" class="fw-semibold text-uppercase" :class="url=== '/sign-up' && 'active'">Sign Up</Link></li>
-                        <li><a href="https://gsc.co.com/apply-agent/portal/index.php" class="fw-semibold text-uppercase" >login</a></li>
+                        <li><Link href="/event" class="fw-semibold text-uppercase" :class="url=== '/event' && 'active'">EVENT</Link></li>
+                        <!-- <li><Link href="/sign-up" class="fw-semibold text-uppercase" :class="url=== '/sign-up' && 'active'">Sign Up</Link></li> -->
+                        <li><a href="https://gsc.co.com/apply-agent/portal/index.php" class="fw-semibold text-uppercase" >
+                            Register / login</a></li>
                     </ul>
 
                     <i class="mobile-nav-toggle d-xl-none bi bi-list" :class="mobileNavActive ? 'bi-x' : 'bi-list'" ref="mobileNavToggleBtn"></i>
@@ -141,7 +142,7 @@ onBeforeUnmount(() => {
                         </div>
                         <div class="col-lg-6">
                             <form action="" method="" class="php-email-form">
-                                <button class=" border-none fw-semibold reg_btn ">LOGIN</button>
+                                <button class=" border-none fw-semibold reg_btn "><a href="https://gsc.co.com/apply-agent/portal/index.php">LOGIN</a></button>
                                 <button class=" border-none text-white fw-semibold reg_btn_hover p-2 m-3">REGISTATION
                                 </button>
                             </form>

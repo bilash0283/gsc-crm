@@ -34,7 +34,14 @@ class HomeController extends Controller
     public function institute(){
         return Inertia::render('Frontend/service/Institutes');
     }
+
+    public function usa(){
+        return Inertia::render('Frontend/Studydestinations/Usa');
+    }
     
+    public function event(){
+        return Inertia::render('Frontend/Event');
+    }
 
 
 
