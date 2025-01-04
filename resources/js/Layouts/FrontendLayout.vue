@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
                             <ul>
                                 <li><Link href="/student" class="fw-semibold text-uppercase" :class="url=== '/student' && 'active'">STUDENTS</Link></li>
                                 <li><Link href="/institute" class="fw-semibold text-uppercase" :class="url=== '/institute' && 'active'">INSTITUTES</Link></li>
-                                <li><link href="/agent" :class="url=== '/agent' && 'active'" class="fw-semibold text-uppercase">AGENTS</link></li>
+                                <li><a href="/agent" :class="url=== '/agent' && 'active'" class="fw-semibold text-uppercase">AGENTS</a></li>
                                 <li><Link href="/service-providers" class="fw-semibold text-uppercase" :class="url=== '/service-providers' && 'active'">Service Providers</Link></li>
                             </ul>
                         </li>
@@ -209,3 +209,8 @@ onBeforeUnmount(() => {
 <style scoped>
 
 </style>
+
+
+
+
+
