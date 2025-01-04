@@ -18,6 +18,7 @@ Route::get('/service-providers',[HomeController::class,'serviceproviders'])->nam
 Route::get('/institute',[HomeController::class,'institute'])->name('institute');
 Route::get('/usa',[HomeController::class,'usa'])->name('usa');
 Route::get('/event',[HomeController::class,'event'])->name('event');
+Route::get('/about',[HomeController::class,'about'])->name('about');
 
 
 

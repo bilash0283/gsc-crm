@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
                             <ul>
                                 <li><Link href="/student" class="fw-semibold text-uppercase" :class="url=== '/student' && 'active'">STUDENTS</Link></li>
                                 <li><Link href="/institute" class="fw-semibold text-uppercase" :class="url=== '/institute' && 'active'">INSTITUTES</Link></li>
-                                <li><a href="/agent" :class="url=== '/agent' && 'active'" class="fw-semibold text-uppercase">AGENTS</a></li>
+                                <li><link href="/agent" :class="url=== '/agent' && 'active'" class="fw-semibold text-uppercase">AGENTS</link></li>
                                 <li><Link href="/service-providers" class="fw-semibold text-uppercase" :class="url=== '/service-providers' && 'active'">Service Providers</Link></li>
                             </ul>
                         </li>
@@ -85,15 +85,15 @@ onBeforeUnmount(() => {
                                 <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">EUROPE</Link></li>
                             </ul>
                         </li>
-                        <li><a href="#team" class="fw-semibold text-uppercase">ABOUT US</a></li>
+                        <li><Link href="/about" class="fw-semibold text-uppercase" :class="url=== '/about' && 'active'">About US</Link></li>
                         <li class="dropdown"><a href="#" class="fw-semibold text-uppercase"><span>Resources</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
-                                <li><a href="#" class="fw-semibold text-uppercase">Student Guide</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">Scholarship</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">Study Abroad FAQ</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">SOP IELTS GRE</a></li>
-                                <li><a href="#" class="fw-semibold text-uppercase">Agents Training</a></li>
+                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Student Guide</Link></li>
+                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Scholarship</Link></li>
+                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Study Abroad FAQ</Link></li>
+                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">SOP IELTS GRE</Link></li>
+                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Agents Training</Link></li>
                             </ul>
                         </li>
                         <li><Link href="/event" class="fw-semibold text-uppercase" :class="url=== '/event' && 'active'">EVENT</Link></li>

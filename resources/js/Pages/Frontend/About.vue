@@ -45,7 +45,7 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
                             </div>
                         </div>
                         <div class="col-lg-7">
-                            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                            <form action="" method="post" class="php-email-form" data-aos="fade-up"
                                 data-aos-delay="200">
                                 <div class="row gy-4">
 

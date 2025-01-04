@@ -43,6 +43,10 @@ class HomeController extends Controller
         return Inertia::render('Frontend/Event');
     }
 
+    public function about(){
+        return Inertia::render('Frontend/About');
+    }
+
 
 
 
