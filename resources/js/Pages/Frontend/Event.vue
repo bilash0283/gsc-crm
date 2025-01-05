@@ -28,15 +28,15 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
                     <h1 class="text-uppercase text-center"><strong>our business model</strong></h1>
                     <div class="row  text-center pt-4">
                         <div class="col-md-4">
-                            <i class="bi bi-people fs-3"></i>
+                            <i class="bi bi-people fs-3 py-3 px-4 border border-2 border-info rounded-circle"></i>
                             <h5 class="my-3"><strong>B2B</strong></h5>
                         </div>
-                        <div class="col-md-4">
-                            <i class="bi bi-globe fs-3"></i>
+                        <div class="col-md-4 py-2">
+                            <i class="bi bi-globe fs-3 py-3 px-4 border border-2 border-info rounded-circle"></i>
                             <h5 class="my-3"><strong>B2C</strong></h5>
                         </div>
                         <div class="col-md-4">
-                            <i class="bi bi-bullseye fs-3 "></i>
+                            <i class="bi bi-bullseye fs-3 py-3 px-4 border border-2 border-info rounded-circle"></i>
                             <h5 class="my-3"><strong>School Visits</strong></h5>
                         </div>
                     </div>
@@ -50,24 +50,24 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
                     <h1 class="text-center"><strong>Our Previous Events</strong></h1>
                     <div class="row pt-5">
                         <div class="col-md-4 p-2">
-                            <img src="./@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
+                            <img src="@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
                         </div>
                         <div class="col-md-4 p-2">
-                            <img src="./@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
+                            <img src="@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
                         </div>
                         <div class="col-md-4 p-2">
-                            <img src="./@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
+                            <img src="@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 p-2">
-                            <img src="./@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
+                            <img src="@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
                         </div>
                         <div class="col-md-4 p-2">
-                            <img src="./@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
+                            <img src="@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
                         </div>
                         <div class="col-md-4 p-2">
-                            <img src="./@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
+                            <img src="@/assets/frontend/src_gsc/image/l3/event.jpg" class="rounded-3 img-fluid" alt="">
                         </div>
                     </div>
                 </div>
