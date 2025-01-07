@@ -14,7 +14,7 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
                             <h1 class="text-white display-5 fw-semibold"><strong>GSC Events in 2025</strong></h1>
                             <p class="text-white">World’s Unique Educational Experience</p>
                             <div class="col-xl-3 cta-btn-container text-center mx-auto">
-                                <button href=""
+                                <button href="#regtation"
                                     class="border-none  fw-semibold reg_btn_hover text-white p-2 m-3">REGISTATION</button>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
             <!-- our previous events -->
 
             <!-- Call To Action Section -->
-            <section id="call-to-action" class="call-to-action">
+            <section id="regtation" class="call-to-action">
                 <img src="@/assets/frontend/src_gsc/image/l3/overley_img.jpg" alt="">
                 <div class="container">
                     <div class="row" data-aos="zoom-in" data-aos-delay="100">
