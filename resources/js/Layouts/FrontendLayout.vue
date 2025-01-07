@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import {usePage,Link} from "@inertiajs/vue3";
+import { usePage, Link } from "@inertiajs/vue3";
 import "@/assets/frontend/css/main.css";
 import "@/assets/frontend/vendor/bootstrap/css/bootstrap.min.css";
 import "@/assets/frontend/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -12,7 +12,7 @@ const isScrolled = ref(false);
 const isLoading = ref(true);
 
 
-const {url} = usePage();
+const { url } = usePage();
 
 onMounted(() => {
     const loadingTimeout = setTimeout(() => {
@@ -59,50 +59,103 @@ onBeforeUnmount(() => {
             <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
                 <Link href="/" class="logo d-flex align-items-center me-auto">
-                    <img src="@/assets/frontend/src_gsc/favicon2.png" alt="">
+                <img src="@/assets/frontend/src_gsc/favicon2.png" alt="">
                 </Link>
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Home</Link></li>
+                        <li>
+                            <Link href="/" class="fw-semibold text-uppercase" :class="url === '/' && 'active'">Home
+                            </Link>
+                        </li>
                         <li class="dropdown"><a href="#"><span class="fw-semibold text-uppercase">Services</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
-                                <li><Link href="/student" class="fw-semibold text-uppercase" :class="url=== '/student' && 'active'">STUDENTS</Link></li>
-                                <li><Link href="/institute" class="fw-semibold text-uppercase" :class="url=== '/institute' && 'active'">INSTITUTES</Link></li>
-                                <li><a href="/agent" :class="url=== '/agent' && 'active'" class="fw-semibold text-uppercase">AGENTS</a></li>
-                                <li><Link href="/service-providers" class="fw-semibold text-uppercase" :class="url=== '/service-providers' && 'active'">Service Providers</Link></li>
+                                <li>
+                                    <Link href="/student" class="fw-semibold text-uppercase"
+                                        :class="url === '/student' && 'active'">STUDENTS</Link>
+                                </li>
+                                <li>
+                                    <Link href="/institute" class="fw-semibold text-uppercase"
+                                        :class="url === '/institute' && 'active'">INSTITUTES</Link>
+                                </li>
+                                <li><a href="/agent" :class="url === '/agent' && 'active'"
+                                        class="fw-semibold text-uppercase">AGENTS</a></li>
+                                <li>
+                                    <Link href="/service-providers" class="fw-semibold text-uppercase"
+                                        :class="url === '/service-providers' && 'active'">Service Providers</Link>
+                                </li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#"><span class="fw-semibold text-uppercase">Study Destinations</span>
-                            <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <li class="dropdown"><a href="#"><span class="fw-semibold text-uppercase">Study
+                                    Destinations</span>
+                                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
-                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">USA</Link></li>
-                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">UK</Link></li>
-                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">CANADA</Link></li>
-                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">AUSTRALIA</Link></li>
-                                <li><Link href="/usa" class="fw-semibold text-uppercase" :class="url=== '/usa' && 'active'">EUROPE</Link></li>
+                                <li>
+                                    <Link href="/usa" class="fw-semibold text-uppercase"
+                                        :class="url === '/usa' && 'active'">USA</Link>
+                                </li>
+                                <li>
+                                    <Link href="/usa" class="fw-semibold text-uppercase"
+                                        :class="url === '/usa' && 'active'">UK</Link>
+                                </li>
+                                <li>
+                                    <Link href="/usa" class="fw-semibold text-uppercase"
+                                        :class="url === '/usa' && 'active'">CANADA</Link>
+                                </li>
+                                <li>
+                                    <Link href="/usa" class="fw-semibold text-uppercase"
+                                        :class="url === '/usa' && 'active'">AUSTRALIA</Link>
+                                </li>
+                                <li>
+                                    <Link href="/usa" class="fw-semibold text-uppercase"
+                                        :class="url === '/usa' && 'active'">EUROPE</Link>
+                                </li>
                             </ul>
                         </li>
-                        <li><Link href="/about" class="fw-semibold text-uppercase" :class="url=== '/about' && 'active'">About US</Link></li>
+                        <li>
+                            <Link href="/about" class="fw-semibold text-uppercase"
+                                :class="url === '/about' && 'active'">
+                            About US</Link>
+                        </li>
                         <li class="dropdown"><a href="#" class="fw-semibold text-uppercase"><span>Resources</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
-                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Student Guide</Link></li>
-                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Scholarship</Link></li>
-                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Study Abroad FAQ</Link></li>
-                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">SOP IELTS GRE</Link></li>
-                                <li><Link href="/" class="fw-semibold text-uppercase" :class="url=== '/' && 'active'">Agents Training</Link></li>
+                                <li>
+                                    <Link href="/" class="fw-semibold text-uppercase" :class="url === '/' && 'active'">
+                                    Student Guide</Link>
+                                </li>
+                                <li>
+                                    <Link href="/" class="fw-semibold text-uppercase" :class="url === '/' && 'active'">
+                                    Scholarship</Link>
+                                </li>
+                                <li>
+                                    <Link href="/" class="fw-semibold text-uppercase" :class="url === '/' && 'active'">
+                                    Study Abroad FAQ</Link>
+                                </li>
+                                <li>
+                                    <Link href="/" class="fw-semibold text-uppercase" :class="url === '/' && 'active'">
+                                    SOP IELTS GRE</Link>
+                                </li>
+                                <li>
+                                    <Link href="/" class="fw-semibold text-uppercase" :class="url === '/' && 'active'">
+                                    Agents Training</Link>
+                                </li>
                             </ul>
                         </li>
-                        <li><Link href="/event" class="fw-semibold text-uppercase" :class="url=== '/event' && 'active'">EVENT</Link></li>
+                        <li>
+                            <Link href="/event" class="fw-semibold text-uppercase"
+                                :class="url === '/event' && 'active'">
+                            EVENT</Link>
+                        </li>
                         <!-- <li><Link href="/sign-up" class="fw-semibold text-uppercase" :class="url=== '/sign-up' && 'active'">Sign Up</Link></li> -->
-                        <li><a href="https://gsc.co.com/apply-agent/portal/index.php" class="fw-semibold text-uppercase" >
-                            Register / login</a></li>
+                        <li><a href="https://gsc.co.com/apply-agent/portal/index.php"
+                                class="fw-semibold text-uppercase">
+                                Register / login</a></li>
                     </ul>
 
-                    <i class="mobile-nav-toggle d-xl-none bi bi-list" :class="mobileNavActive ? 'bi-x' : 'bi-list'" ref="mobileNavToggleBtn"></i>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list" :class="mobileNavActive ? 'bi-x' : 'bi-list'"
+                        ref="mobileNavToggleBtn"></i>
                     <!--                <button class="mobile-nav-toggle" ref="mobileNavToggleBtn">-->
                     <!--                    <i :class="mobileNavActive ? 'bi-x' : 'bi-list'"></i>-->
                     <!--                </button>-->
@@ -120,8 +173,7 @@ onBeforeUnmount(() => {
                             <p>Get all the latest updates, announcements, and special offers directly to your inbox!</p>
                             <form action="forms/newsletter.php" method="post" class="php-email-form">
                                 <div class="newsletter-form"><input type="email" placeholder="example@gmail.com"
-                                                                    name="email"><input
-                                    type="submit" value="Subscribe">
+                                        name="email"><input type="submit" value="Subscribe">
                                 </div>
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
@@ -141,9 +193,16 @@ onBeforeUnmount(() => {
                         </div>
                         <div class="col-lg-6">
                             <form action="" method="" class="php-email-form">
-                                <button class=" border-none fw-semibold reg_btn "><a href="https://gsc.co.com/apply-agent/portal/index.php">LOGIN</a></button>
-                                <button class=" border-none text-white fw-semibold reg_btn_hover p-2 m-3"><a href="https://gsc.co.com/apply-agent/portal/index.php" class="text-white">REGISTATION</a>
-                                </button>
+                                <!-- <button class=" border-none fw-semibold reg_btn "><a
+                                        href="https://gsc.co.com/apply-agent/portal/index.php">LOGIN</a></button>
+                                <button class=" border-none text-white fw-semibold reg_btn_hover p-2 m-3"><a
+                                        href="https://gsc.co.com/apply-agent/portal/index.php"
+                                        class="text-white">REGISTATION</a>
+                                </button> -->
+
+                                <a href="https://gsc.co.com/apply-agent/portal/index.php"><small class=" border-none fw-semibold reg_btn py-2 px-5 ">LOGIN</small></a>
+                                <a href="https://gsc.co.com/apply-agent/portal/index.php"><small class=" border-none text-white fw-semibold reg_btn_hover py-3 px-4 m-3">REGISTATION</small></a>
+                                
                             </form>
                         </div>
                     </div>
@@ -155,7 +214,7 @@ onBeforeUnmount(() => {
                     <div class="col-lg-4 col-md-6 footer-about">
                         <a href="index.html" class="d-flex align-items-center">
                             <img src="@/assets/frontend/src_gsc/favicon2.png" alt="" class="img-fluid"
-                                 style="width:120px;height: 120px;">
+                                style="width:120px;height: 120px;">
                         </a>
                         <div class="footer-contact pt-3">
                             <p><strong>Contact us at</strong></p>
@@ -168,21 +227,47 @@ onBeforeUnmount(() => {
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Countries</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">USA</Link></li>
-                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">UK</Link></li>
-                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">CANADA</Link></li>
-                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">Australia</Link></li>
-                            <li><i class="bi bi-chevron-right"></i><Link href="/usa" class="text-uppercase" :class="url=== '/usa' && 'active'">Europe</Link></li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/usa" class="text-uppercase" :class="url === '/usa' && 'active'">USA</Link>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/usa" class="text-uppercase" :class="url === '/usa' && 'active'">UK</Link>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/usa" class="text-uppercase" :class="url === '/usa' && 'active'">CANADA
+                                </Link>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/usa" class="text-uppercase" :class="url === '/usa' && 'active'">Australia
+                                </Link>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/usa" class="text-uppercase" :class="url === '/usa' && 'active'">Europe
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <Link href="/student" class="text-uppercase" :class="url=== '/student' && 'active'">STUDENTS</Link></li>
-                            <li><i class="bi bi-chevron-right"></i> <Link href="/institute" class="text-uppercase" :class="url=== '/institute' && 'active'">Institutes</Link></li>
-                            <li><i class="bi bi-chevron-right"></i> <Link href="/agent" class="text-uppercase" :class="url=== '/agent' && 'active'">Agents</Link></li>
-                            <li><i class="bi bi-chevron-right"></i> <Link href="/service-providers" class="text-uppercase" :class="url=== '/service-providers' && 'active'">Service Providers</Link></li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/student" class="text-uppercase" :class="url === '/student' && 'active'">
+                                STUDENTS</Link>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/institute" class="text-uppercase"
+                                    :class="url === '/institute' && 'active'">
+                                Institutes</Link>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/agent" class="text-uppercase" :class="url === '/agent' && 'active'">Agents
+                                </Link>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i>
+                                <Link href="/service-providers" class="text-uppercase"
+                                    :class="url === '/service-providers' && 'active'">Service Providers</Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -200,17 +285,11 @@ onBeforeUnmount(() => {
                 </div>
             </div>
         </footer>
-        <a v-if="isScrolled" href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-            class="bi bi-arrow-up-short"></i></a>
+        <a v-if="isScrolled" href="#" id="scroll-top"
+            class="scroll-top d-flex align-items-center justify-content-center active"><i
+                class="bi bi-arrow-up-short"></i></a>
         <div v-if="isLoading" id="preloader"></div>
     </div>
 </template>
 
-<style scoped>
-
-</style>
-
-
-
-
-
+<style scoped></style>
